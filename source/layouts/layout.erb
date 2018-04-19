@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> <%# what is this? %>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title || "CBC Spring Hill" %></title>
+    <%= stylesheet_link_tag "site" %>
+    <%= yield_content(:head_assets) if content_for?(:head_assets) %>
+  </head>
+  <body>
+    <nav>
+      <%# make this a partial %>
+    </nav>
+
+    <main>
+      <%= yield %>
+    </main>
+
+    <footer>
+      <%# make this a partial %>
+    </footer>
+
+    <%= javascript_include_tag "site" %>
+    <%= yield_content(:body_assets) if content_for?(:body_assets) %>
+  </body>
+</html>
