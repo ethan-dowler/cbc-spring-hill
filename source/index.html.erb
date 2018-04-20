@@ -1,11 +1,3 @@
 <% content_for :head_assets, stylesheet_link_tag("home/index") %>
 
-<% copy = data.content.home %>
-<div class='Home'>
-  <div class='Home-title'>
-    <%= copy[:title] %>
-  </div>
-  <div class='Home-body'>
-    <%= copy[:body] %>
-  </div>
-</div>
+<%= partial 'slices/home/hero' %>

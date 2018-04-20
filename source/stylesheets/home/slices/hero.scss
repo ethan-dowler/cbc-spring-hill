@@ -1,0 +1,10 @@
+.Hero {
+
+  &-title {
+    @include title;
+  }
+
+  &-body {
+    @include body;
+  }
+}

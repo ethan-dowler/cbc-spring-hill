@@ -1,11 +1,2 @@
-.Home {
-
-  &-title {
-    font-size: 2.5rem;
-    font-weight: 600;
-  }
-
-  &-body {
-    font-size: 1.5rem;
-  }
-}
+@import '../shared';
+@import 'slices/hero';
