@@ -11,9 +11,7 @@
     <%= yield_content(:head_assets) if content_for?(:head_assets) %>
   </head>
   <body>
-    <nav>
-      <%# make this a partial %>
-    </nav>
+    <%= partial 'slices/top_nav' %>
 
     <main>
       <%= yield %>

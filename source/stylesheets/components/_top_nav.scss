@@ -1,0 +1,16 @@
+.TopNav {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(lap) {
+    flex-direction: row;
+  }
+
+  &-items {
+
+  }
+
+  &-item {
+
+  }
+}

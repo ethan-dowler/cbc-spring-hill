@@ -1,0 +1,9 @@
+<div class='TopNav'>
+  <div class='TopNav-items'>
+    <% data.nav.items.each do |item| %>
+      <div class='TopNav-item'>
+        <%= link_to item[:label], item[:uri] %>
+      </div>
+    <% end %>
+  </div>
+</div>
