@@ -1,3 +1,55 @@
 hero:
   title: Hello, Spring Hill!
   body: Community Baptist Church
+expect:
+  title: What to Expect
+  steps:
+    -
+      title: "Greeted by a member"
+      body: body
+    -
+      title: "Information from the welcome desk"
+      body: body
+    -
+      title: "Find a seat"
+      body: body
+beliefs:
+  title: What We Believe
+  body: "paragraph"
+  links:
+    -
+      label: "Apostles' Creed"
+      link: "#"
+    -
+      label: "link"
+      link: "#"
+    -
+      label: "link"
+      link: "#"
+carousel:
+  items:
+    -
+      quote: "[bible verse]"
+      source: "[reference]"
+    -
+      quote: "[quote from member]"
+      source: "[member name: First L.]"
+    -
+      quote: "[some more stuff]"
+      source: "[source]"
+    -
+      quote: "[place or thing]"
+      source: "[person]"
+    -
+      quote: "[place or thing]"
+      source: "[person]"
+leaders:
+  -
+    title: Mike Stalnakor
+    body: Lead Pastor
+  -
+    title: Dan Glass
+    body: Family & Discipleship Pastor
+  -
+    title: James Bernard
+    body: Minister of Music
