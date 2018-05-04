@@ -1,0 +1,20 @@
+<% copy = data.footer %>
+<footer class='Footer'>
+  <div class='Footer-container'>
+    <div class='Footer-row'>
+      <%= copy[:title] %>
+    </div>
+
+    <div class='Footer-row'>
+      <%= link_to copy[:address], copy[:address_link], class: 'inline-link' %>
+    </div>
+
+    <div class='Footer-row'>
+      <%= copy[:email] %>
+    </div>
+
+    <div class='Footer-row'>
+      <%= copy[:service_time] %>
+    </div>
+  </div>
+</footer>

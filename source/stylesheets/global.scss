@@ -1,0 +1,23 @@
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &.inline-link {
+    color: $cbc-color--light-gray;
+    text-decoration: underline;
+
+    &:visited {
+      color: $cbc-color--light-gray;
+    }
+
+    &:hover {
+      color: $cbc-color--bright-gray;
+    }
+  }
+}
+
+body {
+  text-align: center;
+  color: $cbc-color--dark-gray;
+  font-family: 'Ubuntu', sans-serif;
+}

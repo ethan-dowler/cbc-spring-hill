@@ -1,11 +1,4 @@
 // Page Components
-@mixin header {
-  @include font(m);
-
-  @include breakpoint(lap) {
-    @include font(l);
-  }
-}
 @mixin title {
   @include font(m);
   @include bold;
@@ -37,7 +30,7 @@
   }
 }
 @mixin bold {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 // Utility
@@ -57,4 +50,7 @@
  @else {
    @error "#{$point} is not a valid breakpoint";
  }
+}
+@function cubits($number) {
+  @return $cubit * $number;
 }
