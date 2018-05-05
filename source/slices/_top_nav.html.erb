@@ -2,7 +2,9 @@
 <nav class='TopNav'>
   <div class='TopNav-items'>
     <div class='TopNav-item'>
-      <%= link_to copy[:main], copy[:uri] %>
+      <% link_to copy[:home_uri] do %>
+        <%= image_tag copy[:logo_src], alt: copy[:logo_alt], class: 'TopNav-logo' %>
+      <% end %>
     </div>
   </div>
 </nav>
