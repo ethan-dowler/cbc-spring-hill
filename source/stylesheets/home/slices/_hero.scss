@@ -1,10 +1,11 @@
 .Hero {
+  @include Slice;
 
   &-title {
-    @include title;
+    @include Slice-title;
   }
 
   &-body {
-    @include body;
+    @include Slice-body;
   }
 }

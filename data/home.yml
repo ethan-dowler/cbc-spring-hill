@@ -1,6 +1,6 @@
 hero:
-  title: Hello, Spring Hill!
-  body: Community Baptist Church
+  title: Sunday 10:30 AM
+  body: "1018 Parkway Drive, <span class='no-wrap'>Spring Hill, TN 37174</span>"
 expect:
   title: What to Expect
   steps:
@@ -8,7 +8,7 @@ expect:
       title: "Greeted by a member"
       body: body
     -
-      title: "Information from the welcome desk"
+      title: "Visit welcome desk"
       body: body
     -
       title: "Find a seat"
@@ -43,7 +43,7 @@ carousel:
     -
       quote: "[place or thing]"
       source: "[person]"
-leaders:
+staff:
   -
     title: Mike Stalnakor
     body: Lead Pastor
@@ -52,4 +52,4 @@ leaders:
     body: Family & Discipleship Pastor
   -
     title: James Bernard
-    body: Minister of Music
+    body: Worship Leader

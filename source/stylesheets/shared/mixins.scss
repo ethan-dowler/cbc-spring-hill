@@ -1,5 +1,10 @@
 // Page Components
-@mixin title {
+@mixin Slice {
+  @include scut-padding(cubits(4) cubits(2));
+  border: 1px solid black;
+}
+@mixin Slice-title {
+  @include scut-margin(n n cubits(1));
   @include font(m);
   @include bold;
 
@@ -7,7 +12,7 @@
     @include font(l);
   }
 }
-@mixin body {
+@mixin Slice-body {
   @include font(s);
 }
 

@@ -1,0 +1,33 @@
+.Expect {
+  @include Slice;
+  @include scut-padding(n n cubits(12));
+
+  &-title {
+    @include Slice-title;
+  }
+
+  &-steps {
+    @include scut-center-block($content-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(lap) {
+      flex-direction: row;
+    }
+  }
+
+  &-step {
+    @include scut-margin(cubits(2));
+    width: 12rem;
+
+    &Title {
+      @include scut-margin(n n cubits(1));
+    }
+
+    &Body {
+
+    }
+  }
+}
