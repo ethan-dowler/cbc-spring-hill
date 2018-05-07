@@ -8,9 +8,15 @@ $line-height--small: 1.5rem;
 $line-height--medium: 2rem;
 $line-height--large: 2.5rem;
 
-$site-width: 75rem;
-$content-width: 60rem;
+$width--site: 75rem;
+$width--content: 60rem;
+$width--center-column: 45rem;
 
-$cbc-color--bright-gray: #cfcfcf;
-$cbc-color--light-gray: #afafaf;
-$cbc-color--dark-gray: #373737;
+$color-white: #fff;
+$color--bright-gray: #cfcfcf;
+$color--light-gray: #afafaf;
+$color--dark-gray: #373737;
+$color--primary: #086;
+$color--primary-hover: #097;
+$color--secondary: #33d;
+$color--secondary-hover: #55f;

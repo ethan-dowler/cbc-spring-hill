@@ -1,0 +1,41 @@
+.Beliefs {
+  @include Slice;
+
+  &-title {
+    @include Slice-title;
+  }
+
+  &-body {
+    @include Slice-body;
+    @include scut-margin(n n cubits(4));
+  }
+
+  &-linksLabel {
+    @include scut-margin(n n cubits(1));
+    font-style: italic;
+  }
+
+  &-more {
+    font-size: 1rem;
+  }
+
+  &-links {
+    @include scut-center-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(hands) {
+      flex-direction: row;
+    }
+  }
+
+  &-link {
+    @include scut-margin(cubits(1));
+    
+    @include breakpoint(lap) {
+      width: 12rem;
+    }
+  }
+}

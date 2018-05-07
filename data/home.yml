@@ -15,17 +15,20 @@ expect:
       body: body
 beliefs:
   title: What We Believe
-  body: "paragraph"
+  body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac odio bibendum, gravida massa a, gravida nibh. Pellentesque dapibus luctus dictum. Fusce non maximus erat. Donec sed purus orci. Phasellus eget congue nulla."
+  more: Read More
+  more_uri: /beliefs
+  links_label: Other documents we affirm
   links:
     -
       label: "Apostles' Creed"
-      link: "#"
+      href: "/"
     -
-      label: "link"
-      link: "#"
+      label: "Baptist Faith & Message"
+      href: "/"
     -
-      label: "link"
-      link: "#"
+      label: "Nashville Statement"
+      href: "/"
 carousel:
   items:
     -

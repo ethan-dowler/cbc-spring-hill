@@ -4,8 +4,8 @@
   @include scut-padding(cubits(4) cubits(1));
   display: flex;
   justify-content: center;
-  background-color: $cbc-color--dark-gray;
-  color: $cbc-color--light-gray;
+  background-color: $color--dark-gray;
+  color: $color--light-gray;
 
   &-row {
     @include scut-margin(n n cubits(0.5));

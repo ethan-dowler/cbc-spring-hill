@@ -5,7 +5,7 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-# activate :directory_indexes # pages will be accessible without ".html" if server supports "index" pages
+activate :directory_indexes # pages will be accessible without "index.html" if server supports "index" pages
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
@@ -18,16 +18,6 @@ page "/*.txt", layout: false
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
-# Proxy pages
-# https://middlemanapp.com/advanced/dynamic-pages/
-
-# proxy(
-#   '/this-page-has-no-template.html',
-#   '/template-file.html',
-#   locals: {
-#     which_fake_page: 'Rendering a fake page with a local variable'
-#   },
-# )
 
 # Helpers
 # Methods defined in the helpers block are available in templates

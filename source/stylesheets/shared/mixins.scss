@@ -14,6 +14,7 @@
 }
 @mixin Slice-body {
   @include font(s);
+  @include scut-center-block($width--content);
 }
 
 // Typography

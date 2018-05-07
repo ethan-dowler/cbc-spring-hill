@@ -3,23 +3,39 @@ a {
   text-decoration: none;
 
   &.inline-link {
-    color: $cbc-color--light-gray;
-    text-decoration: underline;
+    color: $color--light-gray;
+    font-size: 1rem;
 
     &:visited {
-      color: $cbc-color--light-gray;
+      color: $color--light-gray;
     }
 
     &:hover {
-      color: $cbc-color--bright-gray;
+      color: $color--bright-gray;
+      text-decoration: underline;
     }
   }
 }
 body {
   text-align: center;
-  color: $cbc-color--dark-gray;
+  color: $color--dark-gray;
   font-family: 'Ubuntu', sans-serif;
 }
 .no-wrap {
   white-space: nowrap;
+}
+.Button {
+  @include scut-padding(cubits(1) cubits(2));
+  background-color: $color--primary;
+  border-radius: 0.25rem;
+  color: $color-white;
+  width: 100%;
+
+  @include breakpoint(hands) {
+    width: auto;
+  }
+
+  &:hover {
+    background-color: $color--primary-hover;
+  }
 }

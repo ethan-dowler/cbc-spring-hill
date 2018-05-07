@@ -1,4 +1,23 @@
 <% copy = data.home.beliefs %>
-<div class='Belifs'>
-  beliefs
+<div class='Beliefs'>
+  <div class='Beliefs-title'>
+    <%= copy[:title] %>
+  </div>
+
+  <div class='Beliefs-body'>
+    <%= copy[:body] %>
+    <%= link_to copy[:more], copy[:more_uri], class: 'Beliefs-more inline-link' %>
+  </div>
+  
+  <div class='Beliefs-linksLabel'>
+    <%= copy[:links_label] %>
+  </div>
+
+  <div class='Beliefs-links'>
+    <% copy[:links].each do |link| %>
+      <% link_to link[:href], class: 'Beliefs-link Button' do %>
+        <%= link[:label] %>
+      <% end %>
+    <% end %>
+  </div>
 </div>

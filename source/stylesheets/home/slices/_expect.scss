@@ -7,7 +7,7 @@
   }
 
   &-steps {
-    @include scut-center-block($content-width);
+    @include scut-center-block($width--content);
     display: flex;
     flex-direction: column;
     justify-content: center;
