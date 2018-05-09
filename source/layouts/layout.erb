@@ -17,13 +17,13 @@
     <%= yield_content(:head_assets) if content_for?(:head_assets) %>
   </head>
   <body>
-    <%= partial 'slices/top_nav' %>
+    <%= partial 'layouts/slices/top_nav' %>
 
     <main>
       <%= yield %>
     </main>
 
-    <%= partial 'slices/footer' %>
+    <%= partial 'layouts/slices/footer' %>
 
     <%= javascript_include_tag "site" %>
     <%= yield_content(:body_assets) if content_for?(:body_assets) %>

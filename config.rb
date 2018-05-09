@@ -5,7 +5,9 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-activate :directory_indexes # pages will be accessible without "index.html" if server supports "index" pages
+# pages will be accessible without "/index.html" if server supports "index" pages
+# i.e. /beliefs = /beliefs/index.html
+activate :directory_indexe
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
