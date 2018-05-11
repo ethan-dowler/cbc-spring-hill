@@ -29,23 +29,9 @@ beliefs:
     -
       label: "Nashville Statement"
       href: "/"
-carousel:
-  items:
-    -
-      quote: "[bible verse]"
-      source: "[reference]"
-    -
-      quote: "[quote from member]"
-      source: "[member name: First L.]"
-    -
-      quote: "[some more stuff]"
-      source: "[source]"
-    -
-      quote: "[place or thing]"
-      source: "[person]"
-    -
-      quote: "[place or thing]"
-      source: "[person]"
+reference:
+  verse: Christ loved the Church, and He gave himself for her.
+  label: Ephesians 5:25
 staff:
   -
     title: Mike Stalnakor

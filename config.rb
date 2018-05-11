@@ -7,7 +7,7 @@ end
 
 # pages will be accessible without "/index.html" if server supports "index" pages
 # i.e. /beliefs = /beliefs/index.html
-activate :directory_indexe
+activate :directory_indexes
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/

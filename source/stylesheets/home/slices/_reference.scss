@@ -1,0 +1,11 @@
+.Reference {
+  @include Slice;
+
+  &-verse {
+    @include Slice-body;
+  }
+
+  &-label {
+    @include Slice-body;
+  }
+}
