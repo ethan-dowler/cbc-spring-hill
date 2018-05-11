@@ -33,12 +33,23 @@ reference:
   verse: Christ loved the Church, and He gave himself for her.
   label: Ephesians 5:25
 staff:
-  -
-    title: Mike Stalnakor
-    body: Lead Pastor
-  -
-    title: Dan Glass
-    body: Family & Discipleship Pastor
-  -
-    title: James Bernard
-    body: Worship Leader
+  title: Staff
+  members:
+    -
+      first: Mike
+      last: Stalnakor
+      position: Lead Pastor
+      img_src: https://dummyimage.com/150x200/000/fff
+      img_alt: Mike Stalnakor - Lead Pastor
+    -
+      first: Dan
+      last: Glass
+      position: Family & Discipleship Pastor
+      img_src: https://dummyimage.com/150x200/000/fff
+      img_alt: Dan Glass - Family & Discipleship Pastor
+    -
+      first: James
+      last: Bernard
+      position: Worship Leader
+      img_src: https://dummyimage.com/150x200/000/fff
+      img_alt: James Bernard - Worship Leader

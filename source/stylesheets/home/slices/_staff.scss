@@ -1,0 +1,72 @@
+.Staff {
+  @include Slice;
+
+  &-title {
+    @include Slice-title;
+  }
+
+  &-members {
+    @include scut-center-block($width--content);
+    @include scut-margin(cubits(2) n n);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(lap) {
+      flex-direction: row;
+    }
+  }
+
+  &-member {
+    @include scut-margin(n cubits(1));
+    display: flex;
+
+    &ImageContainer {
+
+    }
+
+    // &Image {
+
+    // }
+
+    &TextContainer {
+      @include scut-padding(n n n cubits(1));
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 5rem;
+
+      @include breakpoint(hands) {
+        width: 7rem;
+      }
+    }
+
+    &First {
+      @include breakpoint(palm) {
+        @include bold;
+      }
+
+      @include breakpoint(hands) {
+        @include font(m);
+      }
+    }
+
+    &Last {
+      @include scut-margin(n n cubits(1));
+
+      @include breakpoint(palm) {
+        @include bold;
+      }
+
+      @include breakpoint(hands) {
+        @include font(m);
+      }
+    }
+
+    &Position {
+
+    }
+  }
+}
