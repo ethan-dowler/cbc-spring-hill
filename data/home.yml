@@ -36,20 +36,20 @@ staff:
   title: Staff
   members:
     -
-      first: Mike
-      last: Stalnakor
+      first_name: Mike
+      last_name: Stalnakor
       position: Lead Pastor
       img_src: https://dummyimage.com/150x200/000/fff
       img_alt: Mike Stalnakor - Lead Pastor
     -
-      first: Dan
-      last: Glass
+      first_name: Dan
+      last_name: Glass
       position: Family & Discipleship Pastor
       img_src: https://dummyimage.com/150x200/000/fff
       img_alt: Dan Glass - Family & Discipleship Pastor
     -
-      first: James
-      last: Bernard
+      first_name: James
+      last_name: Bernard
       position: Worship Leader
       img_src: https://dummyimage.com/150x200/000/fff
       img_alt: James Bernard - Worship Leader
