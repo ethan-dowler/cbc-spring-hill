@@ -21,14 +21,6 @@
 
   &-links {
     @include scut-center-block;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    @include breakpoint(hands) {
-      flex-direction: row;
-    }
   }
 
   &-link {

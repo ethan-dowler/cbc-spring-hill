@@ -5,8 +5,7 @@
 }
 @mixin Slice-title {
   @include scut-margin(n n cubits(1));
-  @include font(m);
-  @include bold;
+  @include font(m, bold);
 
   @include breakpoint(lap) {
     @include font(l);
@@ -18,7 +17,7 @@
 }
 
 // Typography
-@mixin font($size) {
+@mixin font($size, $options: none) {
   @if $size == l { 
     font-size: $font-size--large;
     line-height: $line-height--large;
@@ -33,6 +32,10 @@
   }
   @else {
     @error "#{$size} is not a font size";
+  }
+
+  @if str-index(#{$options}, 'bold') {
+    @include bold;
   }
 }
 @mixin bold {

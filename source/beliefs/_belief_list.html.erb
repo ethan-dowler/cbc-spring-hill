@@ -1,0 +1,24 @@
+<% copy = data.beliefs.belief_list %>
+<div class='BeliefList'>
+  <div class='BeliefList-title'>
+    <%= copy[:title] %>
+  </div>
+
+  <div class='BeliefList-beliefs'>
+    <% copy[:beliefs].each do |belief| %>
+      <div class='BeliefList-belief'>
+        <div class='BeliefList-beliefCategory'>
+          <%= belief[:title] %>
+        </div>
+        
+        <div class='BeliefList-beliefDetails'>
+          <% belief[:details].each do |detail| %>
+            <div class='BeliefList-beliefDetail'>
+              <%= detail.html_safe %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

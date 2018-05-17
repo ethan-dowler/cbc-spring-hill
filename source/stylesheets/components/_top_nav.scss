@@ -17,7 +17,11 @@
   }
 
   &-logo {
-    @include scut-margin(cubits(1) cubits(1) cubits(0.5));
-    max-width: 12rem;
+    @include scut-margin(cubits(1) cubits(1) cubits(0.5) n);
+    max-width: 14rem;
+
+    @include breakpoint(hands) {
+      max-width: 16rem;
+    }
   }
 }

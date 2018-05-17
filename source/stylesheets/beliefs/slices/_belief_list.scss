@@ -1,0 +1,25 @@
+.BeliefList {
+  @include Slice;
+
+  &-beliefs {
+    @include scut-center-block($width--content);
+    text-align: left;
+  }
+
+  &-belief {
+    @include scut-margin(n n cubits(2));
+
+    &Category {
+      @include font(m, bold);
+      @include scut-margin(n n cubits(1));
+    }
+
+    &Details {
+
+    }
+
+    &Detail {
+      @include scut-margin(n n cubits(1));
+    }
+  }
+}
