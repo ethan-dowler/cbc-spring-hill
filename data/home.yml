@@ -5,24 +5,37 @@ expect:
   title: What to Expect
   steps:
     -
-      title: "Greeted by a member"
-      body: body
+      title: "Parking"
+      body: "The church has parking both in front and behind our building. There are places saved up front for visitors, senior churchgoers, and expectant mothers."
     -
-      title: "Visit welcome desk"
-      body: body
+      title: "How to Enter"
+      body: "The central double doors in the front open into our lobby. Church members will greet you as you enter."
     -
-      title: "Find a seat"
-      body: body
+      title: "Information Desk"
+      body: "Members can assist you in finding a seat in the worship center. They also have details about services, classes, and the church nursery."
+    -
+      title: "Dress"
+      body: "The worshippers at CBC dress in a way that is comfortable for them. Some wear jeans, others have slacks and dress shirts. The women freely wear pants, skirts, or dresses."
+    -
+      title: "Music"
+      body: "Our music is joyful, worshipful and includes both modern praise music and traditional hymns."
+    -
+      title: "The Sermon"
+      body: "Our Pastor gives Bible-based messages which are timely, applicable, and Christ-centered. The total service is about one hour and fifteen minutes."
 beliefs:
   title: What We Believe
-  body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac odio bibendum, gravida massa a, gravida nibh. Pellentesque dapibus luctus dictum. Fusce non maximus erat. Donec sed purus orci. Phasellus eget congue nulla."
+  body: ""
   cta_link: /beliefs
   cta_label: Read More
 reference:
-  verse: Christ loved the Church, and He gave himself for her.
+  verse: "\"Christ loved the Church, and He gave himself for her.\""
   label: Ephesians 5:25
+  cta_link: /beliefs
+  cta_label: What We Believe
 staff:
-  title: Staff
+  title: Leadership
+  body: "This church recognizes Christ as its Head and the Scriptures as its only authority <i>(Colossians 1:18, 2 Timothy 3:16)</i>. Under that authority, the oversight of this church is vested in pastors who operate in concert with the deacons and the congregation."
+  disclaimer: "Our church is an autonomous church which makes its own decisions regarding leadership, membership, doctrine, and practice."
   members:
     -
       first_name: Mike

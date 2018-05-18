@@ -15,6 +15,9 @@
   @include font(s);
   @include scut-center-block($width--content);
 }
+@mixin Hero {
+  @include scut-padding(cubits(8) n);
+}
 
 // Typography
 @mixin font($size, $options: none) {
@@ -34,7 +37,7 @@
     @error "#{$size} is not a font size";
   }
 
-  @if str-index(#{$options}, 'bold') {
+  @if str-index(unquote("#{$options}"), 'bold') {
     @include bold;
   }
 }

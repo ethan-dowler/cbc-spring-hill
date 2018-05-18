@@ -1,4 +1,8 @@
 .Hero {
   @include Slice;
-  
+  @include Hero;
+
+  &-title {
+    @include Slice-title;
+  }
 }

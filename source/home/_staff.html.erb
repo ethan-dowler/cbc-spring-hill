@@ -4,6 +4,10 @@
     <%= copy[:title] %>
   </div>
 
+  <div class='Staff-body'>
+    <%= copy[:body] %>
+  </div>
+
   <div class='Staff-members'>
     <% copy[:members].each do |m| %>
       <div class='Staff-member'>
@@ -25,5 +29,9 @@
         </div>
       </div>
     <% end %>
+  </div>
+
+  <div class='Staff-disclaimer'>
+    <%= copy[:disclaimer] %>
   </div>
 </div>

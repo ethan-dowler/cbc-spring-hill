@@ -5,9 +5,17 @@
     @include Slice-title;
   }
 
+  &-body {
+    @include Slice-body;
+  }
+
+  &-disclaimer {
+    font-style: italic;
+  }
+
   &-members {
     @include scut-center-block($width--content);
-    @include scut-margin(cubits(2) n n);
+    @include scut-margin(cubits(2) n cubits(4));
     display: flex;
     flex-direction: column;
     justify-content: center;

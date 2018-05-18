@@ -1,6 +1,5 @@
 .Expect {
   @include Slice;
-  @include scut-padding(n n cubits(12));
 
   &-title {
     @include Slice-title;
@@ -11,19 +10,31 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 
-    @include breakpoint(lap) {
+    @include breakpoint(palm) {
+      align-items: center;
+    }
+
+    @include breakpoint(hands) {
       flex-direction: row;
+      flex-wrap: wrap;
     }
   }
 
   &-step {
     @include scut-margin(cubits(2));
-    width: 12rem;
+
+    @include breakpoint(hands) {
+      flex-basis: 40%;
+    }
+    
+    @include breakpoint(lap) {
+      flex-basis: 28%;
+    }
 
     &Title {
       @include scut-margin(n n cubits(1));
+      @include font(s, bold);
     }
 
     &Body {

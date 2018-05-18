@@ -1,11 +1,24 @@
 .Reference {
   @include Slice;
+  color: $color--white;
+  background-color: $color--secondary;
 
   &-verse {
-    @include Slice-body;
+    @include scut-margin(n n cubits(1));
+    @include font(m);
   }
 
   &-label {
-    @include Slice-body;
+    @include scut-margin(n n cubits(4));
+    @include font(s);
+  }
+
+  &-link {
+    @include scut-margin(cubits(1));
+    @include bold;
+    
+    @include breakpoint(lap) {
+      width: 12rem;
+    }
   }
 }
