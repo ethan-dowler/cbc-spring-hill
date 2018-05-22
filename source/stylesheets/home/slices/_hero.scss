@@ -1,6 +1,10 @@
 .Hero {
-  @include Slice;
   @include Hero;
+  @include scut-padding(12rem n);
+  background-image: url('/images/building.jpg');
+  background-position: 50% 45%;
+  background-size: auto;
+  color: $color--white;
 
   &-title {
     @include Slice-title;

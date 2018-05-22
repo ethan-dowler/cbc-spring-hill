@@ -1,7 +1,6 @@
 // Page Components
 @mixin Slice {
   @include scut-padding(cubits(4) cubits(2));
-  border: 1px solid black;
 }
 @mixin Slice-title {
   @include scut-margin(n n cubits(1));
@@ -16,7 +15,9 @@
   @include scut-center-block($width--content);
 }
 @mixin Hero {
-  @include scut-padding(cubits(8) n);
+  @include scut-padding(12rem n);
+  color: $color--white;
+  border-bottom: 0.5rem solid $color--secondary;
 }
 
 // Typography

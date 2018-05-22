@@ -1,8 +1,12 @@
 .Expect {
   @include Slice;
+  background-image: url('/images/stone_wall.jpg');
+  background-size: cover;
+  background-position: center;
 
   &-title {
     @include Slice-title;
+    color: $color--white;
   }
 
   &-steps {
@@ -23,13 +27,16 @@
 
   &-step {
     @include scut-margin(cubits(2));
+    @include scut-padding(cubits(1));
+    background-color: $color--white;
+    border-radius: 10px;
 
     @include breakpoint(hands) {
-      flex-basis: 40%;
+      flex-basis: 38%;
     }
     
     @include breakpoint(lap) {
-      flex-basis: 28%;
+      flex-basis: 25%;
     }
 
     &Title {
@@ -37,8 +44,8 @@
       @include font(s, bold);
     }
 
-    &Body {
+    // &Body {
 
-    }
+    // }
   }
 }

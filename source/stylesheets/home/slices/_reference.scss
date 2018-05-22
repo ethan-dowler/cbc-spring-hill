@@ -1,11 +1,12 @@
 .Reference {
   @include Slice;
   color: $color--white;
-  background-color: $color--secondary;
+  background-color: $color--primary;
 
   &-verse {
+    @include scut-center-block($width--content);
     @include scut-margin(n n cubits(1));
-    @include font(m);
+    @include font(s);
   }
 
   &-label {

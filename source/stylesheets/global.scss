@@ -41,12 +41,12 @@ body {
     background-color: $color--primary-hover;
   }
 
-  &--secondary {
-    background-color: $color--secondary;
-    border-color: $color--secondary;
+  &--primary {
+    background-color: $color--primary;
+    border-color: $color--primary;
 
     &:hover {
-      background-color: $color--secondary-hover;
+      background-color: $color--primary-hover;
     }
   }
 
@@ -60,12 +60,12 @@ body {
       background-color: $color--primary;
     }
 
-    &.Button--secondary {
-      color: $color--secondary;
+    &.Button--primary {
+      color: $color--primary;
 
       &:hover {
         color: $color--white;
-        background-color: $color--secondary;
+        background-color: $color--primary;
       }
     }
   }
