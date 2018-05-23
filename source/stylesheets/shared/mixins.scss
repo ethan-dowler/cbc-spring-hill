@@ -19,6 +19,11 @@
   color: $color--white;
   border-bottom: 0.5rem solid $color--secondary;
 }
+@mixin bubble {
+  @include scut-padding(cubits(1));
+  background-color: $color--white;
+  border-radius: 10px;
+}
 
 // Typography
 @mixin font($size, $options: none) {

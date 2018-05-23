@@ -1,22 +1,29 @@
 .Staff {
   @include Slice;
+  background-image: url('/images/stage_backdrop.jpg');
+  background-size: cover;
+  background-position: center;
 
   &-title {
     @include Slice-title;
+    color: $color--white;
   }
 
   &-body {
     @include Slice-body;
+    @include bubble;
   }
 
   &-disclaimer {
     font-style: italic;
+    @include bubble;
   }
 
   &-members {
     @include scut-center-block($width--content);
     @include scut-margin(cubits(2) n cubits(4));
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -24,10 +31,15 @@
     @include breakpoint(lap) {
       flex-direction: row;
     }
+
+    @include breakpoint(desk) {
+      flex-wrap: nowrap;
+    }
   }
 
   &-member {
-    @include scut-margin(n cubits(1));
+    @include scut-margin(cubits(1));
+    @include bubble;
     display: flex;
 
     &ImageContainer {

@@ -26,12 +26,12 @@
   }
 
   &-step {
-    @include scut-margin(cubits(2));
-    @include scut-padding(cubits(1));
-    background-color: $color--white;
-    border-radius: 10px;
+    @include scut-margin(cubits(2) n);
+    @include bubble;
+    flex: 1;
 
     @include breakpoint(hands) {
+      @include scut-margin(n cubits(2));
       flex-basis: 38%;
     }
     
