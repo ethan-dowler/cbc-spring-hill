@@ -1,8 +1,9 @@
 .Hero {
   @include Hero;
   background-image: linear-gradient(rgba($color--dark-gray, 0.5)), url('/images/open_bible.jpg');
-  background-position: top;
+  background-position: 50% 40%;
   background-size: cover;
+  border-bottom: $border--primary;
 
   &-title {
     @include Slice-title;

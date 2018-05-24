@@ -6,6 +6,7 @@
   justify-content: center;
   background-color: $color--dark-gray;
   color: $color--light-gray;
+  border-top: $border--secondary;
 
   &-row {
     @include scut-margin(n n cubits(0.5));

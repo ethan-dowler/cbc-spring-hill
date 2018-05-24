@@ -1,10 +1,17 @@
 .Hero {
   @include Hero;
   @include scut-padding(12rem n);
-  background-image: url('/images/building.jpg');
-  background-position: 50% 45%;
-  background-size: auto;
+  background-image: url('/images/building_m.jpg');
+  background-size: cover;
+  background-position: top;
   color: $color--white;
+  border-bottom: $border--black;
+
+  @include breakpoint(hands) {
+    background-image: url('/images/building.jpg');
+    background-position: 50% 45%;
+    background-size: auto;
+  }
 
   &-title {
     @include Slice-title;
@@ -12,5 +19,9 @@
 
   &-body {
     @include Slice-body;
+
+    a:hover {
+      @include underline;
+    }
   }
 }

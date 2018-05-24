@@ -17,7 +17,6 @@
 @mixin Hero {
   @include scut-padding(12rem n);
   color: $color--white;
-  border-bottom: 0.5rem solid $color--secondary;
 }
 @mixin bubble {
   @include scut-padding(cubits(1));
@@ -49,6 +48,9 @@
 }
 @mixin bold {
   font-weight: 500;
+}
+@mixin underline {
+  text-decoration: underline;
 }
 
 // Utility
