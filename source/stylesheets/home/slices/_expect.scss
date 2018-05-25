@@ -1,8 +1,14 @@
 .Expect {
   @include Slice;
-  background-image: url('/images/sanctuary_empty.jpg');
-  background-size: cover;
-  background-position: center;
+  background-image: url('/images/sanctuary_empty_m.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  
+  @include breakpoint(hands) {
+    background-image: url('/images/sanctuary_empty.jpg');
+    background-position: center;
+  }
 
   &-title {
     @include Slice-title;

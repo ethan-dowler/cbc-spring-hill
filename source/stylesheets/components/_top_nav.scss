@@ -2,26 +2,66 @@
 
 .TopNav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 
-  @include breakpoint(lap) {
-    flex-direction: row;
+  // &-home {
+    
+  // }
+
+  &-beliefs {
+    background-color: $color--beliefs;
+    border-color: $color--beliefs;
+
+    &:hover {
+      background-color: $color--beliefs-hover;
+      border-color: $color--beliefs-hover;
+    }
   }
 
-  &-items {
+  &-give {
+    background-color: $color--give;
+    border-color: $color--give;
 
-  }
-
-  &-item {
-    text-align: left;
+    &:hover {
+      background-color: $color--give-hover;
+      border-color: $color--give-hover;
+    }
   }
 
   &-logo {
-    @include scut-margin(cubits(1) cubits(1) cubits(0.5) n);
-    max-width: 14rem;
+    display: none;
+    
+    @include breakpoint(hands) {
+      display: initial;
+      @include scut-margin(cubits(1) n cubits(0.5) n);
+      max-width: 12rem;
+    }
+
+    &--mobile {
+      @include scut-margin(n n n cubits(0.5));
+      @include scut-size(auto 4rem);
+
+      @include breakpoint(hands) {
+        display: none;
+      }
+    }
+  }
+
+  &-other {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-item {
+    @include scut-margin(n cubits(1) n n);
 
     @include breakpoint(hands) {
-      max-width: 16rem;
+      @include scut-margin(n n n cubits(1));
     }
+  }
+
+  &-button {
+    width: 4rem;
   }
 }

@@ -25,7 +25,7 @@ body {
   white-space: nowrap;
 }
 .Button {
-  @include scut-padding(cubits(1) cubits(2));
+  @include scut-padding(cubits(1));
   background-color: $color--primary;
   border: 2px solid $color--primary;
   border-radius: 0.25rem;
@@ -34,6 +34,7 @@ body {
   transition: all 0.2s;
 
   @include breakpoint(hands) {
+    @include scut-padding(n cubits(2));
     width: auto;
   }
 
@@ -47,6 +48,15 @@ body {
 
     &:hover {
       background-color: $color--primary-hover;
+    }
+  }
+
+  &--secondary {
+    background-color: $color--secondary;
+    border-color: $color--secondary;
+
+    &:hover {
+      background-color: $color--secondary-hover;
     }
   }
 

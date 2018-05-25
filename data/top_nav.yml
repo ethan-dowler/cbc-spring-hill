@@ -1,4 +1,9 @@
 main: Community Baptist Church
-home_uri: /
+home_link: /
 logo_src: cbc_logo_color.png
+logo_m_src: cbc_logo_m.jpg
 logo_alt: Community Baptist Church
+beliefs_text: Beliefs
+beliefs_link: /beliefs
+give_text: Give
+give_link: https://www.easytithe.com/dl/?uid=Comm1018487

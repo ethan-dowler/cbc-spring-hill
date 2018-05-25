@@ -1,9 +1,27 @@
 <% copy = data.top_nav %>
 <nav class='TopNav'>
-  <div class='TopNav-items'>
+  <div class='TopNav-home'>
+    <% link_to copy[:home_link] do %>
+      <%= image_tag copy[:logo_m_src], alt: copy[:logo_alt], title: copy[:logo_alt], class: 'TopNav-logo--mobile' %>
+      
+      <%= image_tag copy[:logo_src], alt: copy[:logo_alt], title: copy[:logo_alt], class: 'TopNav-logo' %>
+    <% end %>
+  </div>
+
+  <div class='TopNav-other'>
     <div class='TopNav-item'>
-      <% link_to copy[:home_uri] do %>
-        <%= image_tag copy[:logo_src], alt: copy[:logo_alt], title: copy[:logo_alt], class: 'TopNav-logo' %>
+      <% link_to copy[:beliefs_link] do %>
+        <div class='Button TopNav-button TopNav-beliefs'>
+          <%= copy[:beliefs_text] %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class='TopNav-item'>
+      <% link_to copy[:give_link] do %>
+        <div class='Button TopNav-button TopNav-give'>
+          <%= copy[:give_text] %>
+        </div>
       <% end %>
     </div>
   </div>
