@@ -21,7 +21,7 @@
 @mixin bubble {
   @include scut-padding(cubits(1));
   background-color: $color--white;
-  border-radius: 10px;
+  border-radius: $border-radius;
 }
 
 // Typography

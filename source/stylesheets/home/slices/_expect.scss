@@ -1,13 +1,18 @@
 .Expect {
   @include Slice;
-  background-image: url('/images/sanctuary_empty_m.jpg');
-  background-size: 100% auto;
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0) 20%,
+      rgba(255, 255, 255, 0),
+      $color--white 80%
+    ),
+    url('/images/sanctuary_empty_m.jpg');
   background-repeat: no-repeat;
   background-position: top;
   
   @include breakpoint(hands) {
     background-image: url('/images/sanctuary_empty.jpg');
-    background-position: center;
+    background-position: 90% 40%;
   }
 
   &-title {

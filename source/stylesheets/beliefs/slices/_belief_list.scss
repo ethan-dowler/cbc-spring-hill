@@ -8,14 +8,36 @@
 
   &-belief {
     @include scut-margin(n n cubits(2));
+    cursor: pointer;
 
     &Category {
-      @include font(m, bold);
       @include scut-margin(n n cubits(1));
+      @include scut-padding(cubits(2));
+      @include font(m, bold);
+      background-color: $color--bright-gray;
+      border-radius: $border-radius;
+
+      &:after {
+        content: "+";
+        color: $color--primary;
+
+        .BeliefList-belief:hover & {
+          color: $color--primary-hover;
+        }
+
+        .open & {
+          content: "-";
+        }
+      }
     }
 
     &Details {
+      height: 0;
+      overflow: hidden;
 
+      .open & {
+        height: auto;
+      }
     }
 
     &Detail {
