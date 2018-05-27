@@ -1,0 +1,12 @@
+.Hero {
+  @include Hero;
+  @include scut-padding(12rem n);
+  background-image: url('/images/vbs_hero_m.jpg');
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @include breakpoint(hands) {
+    background-image: url('/images/vbs_hero.jpg');
+  }
+}

@@ -8,7 +8,6 @@
 
   &-belief {
     @include scut-margin(n n cubits(2));
-    cursor: pointer;
 
     &Category {
       @include scut-margin(n n cubits(1));
@@ -16,6 +15,11 @@
       @include font(m, bold);
       background-color: $color--bright-gray;
       border-radius: $border-radius;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color--light-gray;
+      }
 
       &:after {
         content: "+";
@@ -32,6 +36,7 @@
     }
 
     &Details {
+      @include scut-padding(n cubits(2));
       height: 0;
       overflow: hidden;
 

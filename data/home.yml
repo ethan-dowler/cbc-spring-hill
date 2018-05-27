@@ -31,8 +31,6 @@ beliefs:
 reference:
   verse: "\"Jesus said, 'I am the way, and the truth, and the life; no one comes to the Father except through Me.'\""
   label: John 14:6
-  # verse: "\"Christ loved the Church, and He gave himself for her.\""
-  # label: Ephesians 5:25
   cta_link: /beliefs
   cta_label: What We Believe
 staff:
