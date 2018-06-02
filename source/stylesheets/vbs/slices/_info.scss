@@ -1,3 +1,8 @@
 .Info {
-  
+  @include Slice;
+
+  &-detail {
+    @include scut-margin(n n cubits(1));
+    @include font(m, bold);
+  }
 }
