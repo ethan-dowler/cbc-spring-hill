@@ -1,5 +1,10 @@
 <% copy = data.vbs.info %>
 <div class='Info'>
+
+  <div class='Info-signup'>
+    <%= link_to copy[:signup_text], copy[:signup_link], class: 'Button' %>
+  </div>
+
   <div class='Info-detail'>
     <%= copy[:days] %>
   </div>
@@ -10,5 +15,5 @@
 
   <div class='Info-detail'>
     <%= copy[:ages] %>
-  </div>
+  </div>  
 </div>

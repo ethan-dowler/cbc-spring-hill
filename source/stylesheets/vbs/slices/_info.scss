@@ -5,4 +5,8 @@
     @include scut-margin(n n cubits(1));
     @include font(m, bold);
   }
+
+  &-signup {
+    @include scut-margin(n n cubits(3));
+  }
 }

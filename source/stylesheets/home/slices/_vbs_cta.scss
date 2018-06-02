@@ -1,0 +1,10 @@
+.VbsCta {
+  @include scut-padding(cubits(2) n);
+  background-color: $color--primary;
+
+  &-title {
+    @include scut-margin(n cubits(1) n n);
+    @include font(s);
+    color: $color--white;
+  }
+}

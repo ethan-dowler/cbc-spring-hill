@@ -40,6 +40,7 @@ body {
 
   &:hover {
     background-color: $color--primary-hover;
+    border-color: $color--primary-hover;
   }
 
   &--primary {
@@ -48,6 +49,7 @@ body {
 
     &:hover {
       background-color: $color--primary-hover;
+      border-color: $color--primary-hover;
     }
   }
 
@@ -57,6 +59,7 @@ body {
 
     &:hover {
       background-color: $color--secondary-hover;
+      border-color: $color--secondary-hover;
     }
   }
 
