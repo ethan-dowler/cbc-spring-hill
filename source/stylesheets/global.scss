@@ -71,6 +71,7 @@ body {
     &:hover {
       color: $color--white;
       background-color: $color--primary;
+      border-color: $color--white;
     }
 
     &.Button--primary {
@@ -79,6 +80,7 @@ body {
       &:hover {
         color: $color--white;
         background-color: $color--primary;
+        border-color: $color--white;
       }
     }
   }
