@@ -11,8 +11,13 @@
   <div class='Staff-members'>
     <% copy[:members].each do |m| %>
       <div class='Staff-member'>
-        <div class='Staf-memberImageContainer'>
-          <img src='<%= m[:img_src] %>' alt='<%= m[:img_alt] %>' title='<%= m[:img_alt] %>'>
+        <div class='Staff-memberImageContainer'>
+          <img
+            class='Staff-memberImage'
+            src='<%= m[:img_src] %>'
+            alt='<%= m[:img_alt] %>'
+            title='<%= m[:img_alt] %>'
+          >
         </div>
 
         <div class='Staff-memberTextContainer'>

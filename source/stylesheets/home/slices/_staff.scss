@@ -42,13 +42,14 @@
     @include bubble;
     display: flex;
 
-    &ImageContainer {
-
-    }
-
-    // &Image {
+    // &ImageContainer {
 
     // }
+
+    &Image {
+      max-width: 8rem;
+      max-height: 10rem;
+    }
 
     &TextContainer {
       @include scut-padding(n n n cubits(1));

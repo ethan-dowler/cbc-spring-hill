@@ -45,17 +45,17 @@ staff:
       first_name: Mike
       last_name: Stalnaker
       position: Lead Pastor
-      img_src: https://dummyimage.com/150x200/000/fff
+      img_src: /images/mike.jpg
       img_alt: Mike Stalnaker - Lead Pastor
     -
       first_name: Dan
       last_name: Glass
       position: Family & Discipleship Pastor
-      img_src: https://dummyimage.com/150x200/000/fff
+      img_src: /images/dan.jpg
       img_alt: Dan Glass - Family & Discipleship Pastor
     -
       first_name: James
       last_name: Barnard
       position: Worship Leader
-      img_src: https://dummyimage.com/150x200/000/fff
+      img_src: /images/james.jpg
       img_alt: James Barnard - Worship Leader
