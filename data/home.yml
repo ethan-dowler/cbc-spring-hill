@@ -1,10 +1,8 @@
 hero:
   title: Sunday 10:30 AM
-  body: "1018 Parkway Drive, <span class='no-wrap'>Spring Hill, TN 37174</span>"
+  address: "1018 Parkway Drive, <span class='no-wrap'>Spring Hill, TN 37174</span>"
   link: https://www.google.com/maps/dir//Community+Baptist+Church,+1018+Parkway+Dr,+Spring+Hill,+TN+37174/
-vbs_cta:
-  cta_text: VBS Info
-  cta_link: /vbs
+  email: info@cbcspringhill.org
 expect:
   title: What to Expect
   steps:
