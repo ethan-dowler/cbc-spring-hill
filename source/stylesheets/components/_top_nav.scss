@@ -4,21 +4,8 @@
   display: flex;
   justify-content: space-between;
 
-  // &-home {
-    
-  // }
-
-  &-beliefs {
-    background-color: $color--beliefs;
-    border-color: $color--beliefs;
-
-    &:hover {
-      background-color: $color--beliefs-hover;
-      border-color: $color--beliefs-hover;
-    }
-  }
-
   &-give {
+    @include scut-padding(cubits(1) cubits(2));
     background-color: $color--give;
     border-color: $color--give;
 
@@ -59,9 +46,5 @@
     @include breakpoint(hands) {
       @include scut-margin(n n n cubits(1));
     }
-  }
-
-  &-button {
-    width: 4rem;
   }
 }

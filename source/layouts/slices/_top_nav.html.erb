@@ -10,19 +10,15 @@
 
   <div class='TopNav-other'>
     <div class='TopNav-item'>
-      <% link_to copy[:beliefs_link] do %>
-        <div class='Button TopNav-button TopNav-beliefs'>
-          <%= copy[:beliefs_text] %>
-        </div>
-      <% end %>
-    </div>
-
-    <div class='TopNav-item'>
       <% link_to copy[:give_link] do %>
         <div class='Button TopNav-button TopNav-give'>
           <%= copy[:give_text] %>
         </div>
       <% end %>
+    </div>
+
+    <div class='TopNav-item'>
+      <%= image_tag ihamburger, class: 'TopNav-toggle', data: { toggle_menu: :true } %>
     </div>
   </div>
 </nav>

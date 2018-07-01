@@ -1,5 +1,15 @@
 title: Community Baptist Church
-address: 1018 Parkway Drive, Spring Hill, TN 37174
+address: 1018 Parkway Drive, <span class='no-wrap'>Spring Hill, TN 37174</span>
 address_link: https://www.google.com/maps/dir/''/Community+Baptist+Church,+1018+Parkway+Dr,+Spring+Hill,+TN+37174
 email: info@cbcspringhill.org
 service_time: "Sunday 10:30 AM"
+callouts:
+  -
+    text: "hosting: ShareFaith"
+    link: https://sharefaith.com
+  -
+    text: "icons: Icons8"
+    link: https://icons8.com
+  -
+    text: "built using: Middleman"
+    link: https://middlemanapp.com/

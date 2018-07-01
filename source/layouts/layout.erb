@@ -18,6 +18,7 @@
     <%= yield_content(:head_assets) if content_for?(:head_assets) %>
   </head>
   <body>
+    <%= partial 'layouts/slices/mobile_nav' %>
     <%= partial 'layouts/slices/top_nav' %>
 
     <main>

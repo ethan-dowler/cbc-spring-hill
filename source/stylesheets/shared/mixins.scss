@@ -38,6 +38,10 @@
     font-size: $font-size--small;
     line-height: $line-height--small;
   }
+  @else if $size == xs {
+    font-size: $font-size--extra-small;
+    line-height: $line-height--extra-small;
+  }
   @else {
     @error "#{$size} is not a font size";
   }

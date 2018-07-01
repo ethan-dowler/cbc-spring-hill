@@ -6,7 +6,7 @@
     </div>
 
     <div class='Footer-row'>
-      <%= link_to copy[:address], copy[:address_link], class: 'inline-link' %>
+      <%= link_to copy[:address].html_safe, copy[:address_link], class: 'inline-link mobile-link' %>
     </div>
 
     <div class='Footer-row'>
@@ -16,5 +16,13 @@
     <div class='Footer-row'>
       <%= copy[:service_time] %>
     </div>
+  </div>
+
+  <div class='Footer-callouts'>
+    <% copy[:callouts].each do |item| %>
+      <div class='Footer-callout'>
+        <%= link_to item[:text], item[:link], class: 'inline-link' %>
+      </div>
+    <% end %>
   </div>
 </footer>

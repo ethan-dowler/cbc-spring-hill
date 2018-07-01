@@ -1,0 +1,10 @@
+{
+  "name": "github.io-source",
+  "version": "1.0.0",
+  "description": "Source Code for Community Baptist Church Spring Hill site",
+  "repository": "git@github.com:ethan-dowler/cbc-spring-hill.git",
+  "author": "ethan-dowler <Ethan.dowler@daveramsey.com>",
+  "devDependencies": {
+    "prettier": "^1.13.7"
+  }
+}
