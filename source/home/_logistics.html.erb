@@ -1,0 +1,14 @@
+<% copy = data.home.logistics %>
+<div class='Logistics'>
+  <div class='Logistics-title'>
+    <%= copy[:title] %>
+  </div>
+  
+  <div class='Logistics-body'>
+    <%= link_to copy[:address], copy[:link] %>
+  </div>
+
+  <div class='Logistics-body'>
+    <%= copy[:email] %>
+  </div>
+</div>

@@ -3,12 +3,10 @@
   <div class='Hero-title'>
     <%= copy[:title] %>
   </div>
-  
-  <div class='Hero-body'>
-    <%= link_to copy[:address], copy[:link] %>
-  </div>
 
   <div class='Hero-body'>
-    <%= copy[:email] %>
+    <%= copy[:body] %>
   </div>
+
+  <%= link_to copy[:cta_text], copy[:cta_link], class: 'Hero-cta' %>
 </div>

@@ -11,5 +11,5 @@ callouts:
     text: "icons: Icons8"
     link: https://icons8.com
   -
-    text: "built using: Middleman"
+    text: "built with: Middleman"
     link: https://middlemanapp.com/
