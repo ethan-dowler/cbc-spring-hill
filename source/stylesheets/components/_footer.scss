@@ -12,7 +12,7 @@
   }
 
   &-row {
-    @include scut-margin(n n cubits(0.5));
+    @include scut-margin(cubits(1) n);
     @include font(s);
   }
 

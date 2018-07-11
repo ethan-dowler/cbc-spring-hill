@@ -1,9 +1,8 @@
 .Staff {
   @include Slice;
-  background-image: url('/images/stone_wall.jpg');
+  background-image: url('/images/stage_backdrop.jpg');
   background-size: cover;
   background-position: center;
-  border-bottom: $border--secondary;
 
   &-title {
     @include Slice-title;
@@ -18,6 +17,10 @@
   &-disclaimer {
     font-style: italic;
     @include bubble;
+
+    @include breakpoint(palm) {
+      @include font(s);
+    }
   }
 
   &-members {

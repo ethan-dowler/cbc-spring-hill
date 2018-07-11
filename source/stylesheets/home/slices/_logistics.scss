@@ -1,17 +1,8 @@
 .Logistics {
   @include Slice;
   @include scut-padding(cubits(6) n);
-  background-image: url('/images/building_m.jpg');
-  background-size: cover;
-  background-position: 50% 65%;
-  color: $color--white;
-  border-bottom: $border--secondary;
-
-  @include breakpoint(hands) {
-    background-image: url('/images/building.jpg');
-    background-position: 0% 40%;
-    background-size: auto;
-  }
+  background-color: $color--white;
+  color: $color--dark-gray;
 
   &-title {
     @include Slice-title;

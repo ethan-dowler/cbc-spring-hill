@@ -4,7 +4,6 @@
   background-image: linear-gradient($color--dark-gray-tint), url('/images/front_row_view_m.jpg');
   background-position: 20% 0%;
   background-size: cover;
-  border-bottom: $border--primary;
 
   @include breakpoint(hands) {
     @include scut-padding(12rem n);

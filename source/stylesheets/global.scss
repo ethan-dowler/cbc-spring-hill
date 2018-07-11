@@ -92,4 +92,16 @@ body {
       }
     }
   }
+
+  &--skeleton {
+    background-color: $color--white;
+    border-color: $color--dark-gray;
+    color: $color--dark-gray;
+
+    &:hover {
+      background-color: $color--dark-gray;
+      color: $color--white;
+      border-color: $color--dark-gray;
+    }
+  }
 }
