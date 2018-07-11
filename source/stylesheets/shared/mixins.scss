@@ -11,12 +11,23 @@
   }
 }
 @mixin Slice-body {
-  @include font(s);
   @include scut-center-block($width--content);
+  @include font(s);
 }
 @mixin Hero {
-  @include scut-padding(12rem n);
+  @include scut-padding(12rem 2rem);
   color: $color--white;
+}
+@mixin Hero-title {
+  @include Slice-title;
+}
+@mixin Hero-body {
+  @include scut-center-block($width--content);
+  @include font(s);
+
+  @include breakpoint(lap) {
+    @include font(m);
+  }
 }
 @mixin bubble {
   @include scut-padding(cubits(1));

@@ -1,10 +1,11 @@
+@import 'shared';
+
 a {
   color: inherit;
   text-decoration: none;
 
   &.inline-link {
     color: $color--light-gray;
-    font-size: 1rem;
 
     &:visited {
       color: $color--light-gray;
@@ -23,6 +24,7 @@ a {
   }
 }
 body {
+  @include font(xs);
   text-align: center;
   color: $color--dark-gray;
   font-family: 'Ubuntu', sans-serif;

@@ -13,6 +13,7 @@
 
   &-row {
     @include scut-margin(n n cubits(0.5));
+    @include font(s);
   }
 
   &-callouts {

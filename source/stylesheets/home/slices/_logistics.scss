@@ -1,15 +1,15 @@
-.Hero {
-  @include Hero;
-  @include scut-padding(12rem n);
+.Logistics {
+  @include Slice;
+  @include scut-padding(cubits(6) n);
   background-image: url('/images/building_m.jpg');
   background-size: cover;
-  background-position: top;
+  background-position: 50% 65%;
   color: $color--white;
-  border-bottom: $border--primary;
+  border-bottom: $border--secondary;
 
   @include breakpoint(hands) {
     background-image: url('/images/building.jpg');
-    background-position: 50% 45%;
+    background-position: 0% 40%;
     background-size: auto;
   }
 

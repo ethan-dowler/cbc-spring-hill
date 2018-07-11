@@ -5,6 +5,11 @@
   justify-content: space-between;
 
   &-give {
+    // @include breakpoint(palm) {
+    //   display: none;
+    // }
+
+    // @include breakpoint(hands) {
     @include scut-padding(cubits(1) cubits(2));
     background-color: $color--give;
     border-color: $color--give;
@@ -13,11 +18,12 @@
       background-color: $color--give-hover;
       border-color: $color--give-hover;
     }
+    // }
   }
 
   &-logo {
     display: none;
-    
+
     @include breakpoint(hands) {
       display: initial;
       @include scut-margin(cubits(1) n cubits(0.5) n);
@@ -47,4 +53,8 @@
       @include scut-margin(n n n cubits(1));
     }
   }
+
+  // &-toggle {
+  //   cursor: pointer;
+  // }
 }

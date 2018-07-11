@@ -4,7 +4,7 @@
   @include scut-fixed(0 (-$width--mobile-nav) 0 n);
   @include scut-padding(cubits(1));
   @include scut-size($width--mobile-nav 100vh);
-  background-color: $color--bright-gray;
+  background-color: $color--white;
   display: flex;
   flex-direction: column;
   align-items: flex-end;

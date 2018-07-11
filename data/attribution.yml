@@ -1,0 +1,10 @@
+callouts:
+  -
+    text: "hosting: ShareFaith"
+    link: https://sharefaith.com
+  -
+    text: "icons: Icons8"
+    link: https://icons8.com
+  -
+    text: "built with: Middleman"
+    link: https://middlemanapp.com/
