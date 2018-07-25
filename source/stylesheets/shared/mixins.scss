@@ -3,7 +3,7 @@
   @include scut-padding(cubits(4) cubits(2));
 }
 @mixin Slice-title {
-  @include scut-margin(n n cubits(1));
+  @include scut-margin(n n cubits(2));
   @include font(m, bold);
 
   @include breakpoint(lap) {

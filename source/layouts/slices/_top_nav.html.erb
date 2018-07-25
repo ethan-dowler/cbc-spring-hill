@@ -18,6 +18,14 @@
     </div>
 
     <div class='TopNav-item'>
+      <% link_to copy[:events_link] do %>
+        <div class='Button Button--gray TopNav-button'>
+          <%= copy[:events_text] %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class='TopNav-item'>
       <% link_to copy[:give_link] do %>
         <div class='Button TopNav-button TopNav-give'>
           <%= copy[:give_text] %>

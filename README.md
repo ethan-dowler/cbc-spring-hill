@@ -1,2 +1,2 @@
 # cbc-spring-hill
-Website for Community Baptist Church in Spring Hill, TN
+Source code for the website of Community Baptist Church in Spring Hill, TN

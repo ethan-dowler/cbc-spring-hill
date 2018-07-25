@@ -1,0 +1,26 @@
+<% copy = data.events.event %>
+<div class='Event'>
+  <div class='Event-title'>
+    <%= copy[:title].html_safe %>
+  </div>
+
+  <div class='Event-body'>
+    <%= copy[:body] %>
+  </div>
+
+  <div class='Event-address'>
+    <%= link_to copy[:address], copy[:link] %>
+  </div>
+
+  <div class='Event-inflatables'>
+    <% copy[:inflatables].each do |i| %>
+      <div class='Event-imageContainer'>
+        <img
+          class='Event-image'
+          src='<%= i[:img_src] %>'
+          alt='<%= i[:img_alt] %>'
+        >
+      </div>
+    <% end %>
+  </div>
+</div>

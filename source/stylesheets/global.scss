@@ -104,4 +104,16 @@ body {
       border-color: $color--dark-gray;
     }
   }
+
+  &--gray {
+    background-color: $color--light-gray;
+    border-color: $color--light-gray;
+    color: $color--white;
+
+    &:hover {
+      background-color: $color--bright-gray;
+      border-color: $color--bright-gray;
+      color: $color--white;
+    }
+  }
 }

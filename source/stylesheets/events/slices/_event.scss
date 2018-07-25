@@ -1,0 +1,46 @@
+.Event {
+  @include Slice;
+
+  @include breakpoint(hands) {
+    @include scut-padding(n n cubits(6));
+  }
+  
+  &-title {
+    @include Slice-title;
+  }
+  
+  &-body {
+    @include Slice-body;
+    @include scut-margin(n n cubits(2));
+  }
+
+  &-address {
+    @include Slice-body;
+    @include scut-margin(n n cubits(2));
+
+    a:hover {
+      @include underline;
+    }
+  }
+
+  &-inflatables {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    @include breakpoint(hands) {
+      flex-direction: row;
+      align-items: baseline;
+    }
+  }
+
+  &-imageContainer {
+    flex-basis: 24%;
+  }
+
+  &-image {
+    max-width: 16rem;
+    max-height: 14rem;
+  }
+}

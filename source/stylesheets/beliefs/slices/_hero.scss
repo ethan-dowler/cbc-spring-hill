@@ -5,6 +5,6 @@
   background-size: cover;
 
   &-title {
-    @include Slice-title;
+    @include Hero-title;
   }
 }

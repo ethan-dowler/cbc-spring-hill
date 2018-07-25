@@ -5,12 +5,6 @@
   justify-content: space-between;
 
   &-give {
-    // @include breakpoint(palm) {
-    //   display: none;
-    // }
-
-    // @include breakpoint(hands) {
-    @include scut-padding(cubits(1) cubits(2));
     background-color: $color--give;
     border-color: $color--give;
 
@@ -18,7 +12,6 @@
       background-color: $color--give-hover;
       border-color: $color--give-hover;
     }
-    // }
   }
 
   &-logo {
