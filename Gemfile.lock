@@ -26,6 +26,7 @@ GEM
     contracts (0.13.0)
     dotenv (2.2.2)
     erubis (2.7.0)
+    evil_icons (1.10.1)
     execjs (2.7.0)
     fast_blank (1.0.0)
     fastimage (2.1.1)
@@ -131,6 +132,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  evil_icons
   middleman
   middleman-autoprefixer
   middleman-sprockets

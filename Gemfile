@@ -1,10 +1,11 @@
 source "https://rubygems.org"
 
+gem "evil_icons"
 gem "middleman"
 gem "middleman-autoprefixer"
-gem 'middleman-sprockets'
-gem 'sprockets-es6'
+gem "middleman-sprockets"
 gem "ramsey_cop"
+gem "sprockets-es6"
 
 # Gems TODO
 # gem 'middleman-sitemap-ping' # https://github.com/krautcomputing/middleman-sitemap-ping

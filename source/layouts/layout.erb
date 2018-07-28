@@ -20,7 +20,7 @@
   <body>
     <%= partial 'layouts/slices/mobile_nav' %>
     <%= partial 'layouts/slices/top_nav' %>
-
+    
     <main>
       <%= yield %>
     </main>
@@ -29,5 +29,6 @@
 
     <%= javascript_include_tag "site" %>
     <%= yield_content(:body_assets) if content_for?(:body_assets) %>
+    <%= evil_icons_sprite %>
   </body>
 </html>
