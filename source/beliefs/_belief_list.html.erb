@@ -13,7 +13,9 @@
         <div class='BeliefList-beliefCategory'
              data-toggle="<%= index %>"
         >
-          <%= belief[:title] %>
+          <span><%= belief[:title] %></span>
+          <%= evil_icon 'ei-plus', size: :m, class: "BeliefList-icon BeliefList-open" %>
+          <%= evil_icon 'ei-minus', size: :m, class: "BeliefList-icon BeliefList-close" %>
         </div>
 
         <div class='BeliefList-beliefDetails'

@@ -7,17 +7,17 @@ end
 
 require "sprockets/es6"
 activate :sprockets do |s|
-  s.supported_output_extensions << ".js"
+  s.supported_output_extensions << ".es6"
 end
 
 # Helpers
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
-require "lib/icon_helpers"
-helpers IconHelpers
-
-require 'evil_icons'
+require "evil_icons"
 helpers EvilIcons::Helpers
+
+require "lib/view_helpers/evil_icons"
+helpers ViewHelpers::EvilIcons
 
 after_configuration do
   sprockets.append_path(EvilIcons.assets_dir)

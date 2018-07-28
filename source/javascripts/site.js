@@ -1,2 +1,2 @@
-// = require ./drop_toggle.js
+//= require ./drop_toggle.js
 //  require ./nav.js

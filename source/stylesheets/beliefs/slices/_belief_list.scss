@@ -11,27 +11,17 @@
 
     &Category {
       @include scut-margin(n n cubits(1));
-      @include scut-padding(cubits(2));
+      @include scut-padding(cubits(1) cubits(2));
       @include font(m, bold);
-      background-color: $color--bright-gray;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       border-radius: $border-radius;
+      background-color: $color--bright-gray;
       cursor: pointer;
 
       &:hover {
         background-color: $color--light-gray;
-      }
-
-      &:after {
-        content: "+";
-        color: $color--primary;
-
-        .BeliefList-belief:hover & {
-          color: $color--primary-hover;
-        }
-
-        .open & {
-          content: "-";
-        }
       }
     }
 
@@ -47,6 +37,24 @@
 
     &Detail {
       @include scut-margin(n n cubits(1));
+    }
+  }
+
+  &-icon {
+    color: $color--primary;
+  }
+
+  &-open {
+    .open & {
+      display: none;
+    }
+  }
+
+  &-close {
+    display: none;
+
+    .open & {
+      display: inline-block;
     }
   }
 }
