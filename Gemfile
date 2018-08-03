@@ -2,9 +2,9 @@ source "https://rubygems.org"
 
 gem "evil_icons"
 gem "middleman"
-gem "middleman-autoprefixer"  # https://github.com/middleman/middleman-autoprefixer
-gem "middleman-dotenv"        # https://github.com/karlfreeman/middleman-dotenv
-gem "middleman-sprockets"     # https://github.com/middleman/middleman-sprockets
+gem "middleman-autoprefixer"                  # https://github.com/middleman/middleman-autoprefixer
+gem "middleman-dotenv"                        # https://github.com/karlfreeman/middleman-dotenv
+gem "middleman-sprockets"                     # https://github.com/middleman/middleman-sprockets
 gem "rake"
 gem "ramsey_cop"
 gem "sprockets-es6"
