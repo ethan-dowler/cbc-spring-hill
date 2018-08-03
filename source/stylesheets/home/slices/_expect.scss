@@ -1,7 +1,6 @@
 .Expect {
   @include Slice;
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       rgba(255, 255, 255, 0) 20%,
       rgba(255, 255, 255, 0),
       $color--white 80%
@@ -9,7 +8,7 @@
     url('/images/sanctuary_empty_m.jpg');
   background-repeat: no-repeat;
   background-position: top;
-  
+
   @include breakpoint(hands) {
     background-image: url('/images/sanctuary_empty.jpg');
     background-position: 90% 40%;
@@ -45,7 +44,7 @@
       @include scut-margin(n cubits(2));
       flex-basis: 38%;
     }
-    
+
     @include breakpoint(lap) {
       flex-basis: 25%;
     }

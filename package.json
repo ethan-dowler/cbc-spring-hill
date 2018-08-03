@@ -5,6 +5,11 @@
   "repository": "git@github.com:ethan-dowler/cbc-spring-hill.git",
   "author": "ethan-dowler <Ethan.dowler@daveramsey.com>",
   "devDependencies": {
+    "husky": "^0.14.3",
     "prettier": "^1.13.7"
+  },
+  "scripts": {
+    "prettier": "prettier --write '{source/**/*.js,source/**/*.es6,source/**/*.scss}'",
+    "precommit": "yarn prettier"
   }
 }

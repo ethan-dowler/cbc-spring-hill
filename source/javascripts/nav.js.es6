@@ -1,4 +1,4 @@
-(function() {
+;(function() {
   const open = 'menu-open'
 
   var openMenu = () => {

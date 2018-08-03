@@ -1,6 +1,7 @@
 .Hero {
   @include Hero;
-  background-image: linear-gradient(rgba($color--dark-gray, 0.3)), url('/images/food_event.jpg');
+  background-image: linear-gradient(rgba($color--dark-gray, 0.3)),
+    url('/images/food_event.jpg');
   background-position: top left;
   background-size: cover;
 
