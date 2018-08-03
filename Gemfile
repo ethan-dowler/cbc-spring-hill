@@ -6,6 +6,7 @@ gem "middleman-autoprefixer"
 gem "middleman-sprockets"
 gem "ramsey_cop"
 gem "sprockets-es6"
+gem "rake"
 
 # Gems TODO
 # gem 'middleman-sitemap-ping' # https://github.com/krautcomputing/middleman-sitemap-ping

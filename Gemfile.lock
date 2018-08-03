@@ -96,6 +96,7 @@ GEM
     public_suffix (3.0.2)
     rack (2.0.4)
     rainbow (3.0.0)
+    rake (12.3.1)
     ramsey_cop (0.8.0)
       rubocop (~> 0.54.0)
     rb-fsevent (0.10.3)
@@ -136,6 +137,7 @@ DEPENDENCIES
   middleman
   middleman-autoprefixer
   middleman-sprockets
+  rake
   ramsey_cop
   sprockets-es6
 
