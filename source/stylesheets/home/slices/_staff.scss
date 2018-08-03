@@ -14,15 +14,6 @@
     @include bubble;
   }
 
-  &-disclaimer {
-    font-style: italic;
-    @include bubble;
-
-    @include breakpoint(palm) {
-      @include font(s);
-    }
-  }
-
   &-members {
     @include scut-center-block($width--content);
     @include scut-margin(cubits(2) n cubits(4));

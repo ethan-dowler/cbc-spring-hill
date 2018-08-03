@@ -28,6 +28,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     
     @include breakpoint(hands) {
       flex-direction: row;
@@ -37,6 +38,14 @@
 
   &-imageContainer {
     flex-basis: 24%;
+
+    @include breakpoint(hands) {
+      flex-basis: 48%;
+    }
+
+    @include breakpoint(desk) {
+      flex-basis: 24%;
+    }
   }
 
   &-image {

@@ -7,6 +7,10 @@ a {
   &.inline-link {
     color: $color--light-gray;
 
+    @include breakpoint(palm) {
+      border-bottom: 1px solid $color--light-gray;
+    }
+
     &:visited {
       color: $color--light-gray;
     }
@@ -15,13 +19,14 @@ a {
       color: $color--bright-gray;
       text-decoration: underline;
     }
-  }
 
-  &.mobile-link {
-    @include breakpoint(palm) {
-      text-decoration: underline;
+    &--mobile-only {
+      @include breakpoint(hands) {
+        pointer-events: none;
+      }
     }
   }
+
 }
 body {
   @include font(xs);

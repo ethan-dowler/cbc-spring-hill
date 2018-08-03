@@ -10,15 +10,19 @@
     </div>
 
     <div class='Footer-row'>
-      <%= link_to copy[:address].html_safe, copy[:address_link], class: 'inline-link mobile-link' %>
+      <%= link_to copy[:address].html_safe, copy[:address_link], class: 'inline-link' %>
     </div>
 
     <div class='Footer-row'>
-      <%= copy[:email] %>
+      <%= link_to copy[:phone], copy[:phone_link], class: 'inline-link inline-link--mobile-only' %>
     </div>
 
     <div class='Footer-row'>
-      <%= link_to copy[:facebook_text], copy[:facebook_link], class: 'inline-link mobile-link' %>
+      <%= link_to copy[:email], copy[:email_link], class: 'inline-link inline-link--mobile-only' %>
+    </div>
+
+    <div class='Footer-row'>
+      <%= link_to copy[:facebook_text], copy[:facebook_link], class: 'inline-link' %>
     </div>
   </div>
 </footer>

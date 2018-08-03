@@ -14,24 +14,19 @@ expect:
       body: "The church has parking both in front and behind our building. There are places saved up front for visitors, senior churchgoers, and expectant mothers."
     -
       title: "How to Enter"
-      body: "The central double doors in the front open into our lobby. Church members will greet you as you enter."
+      body: "The central double doors in the front open into our lobby."
     -
       title: "Information Desk"
       body: "Members can assist you in finding a seat in the worship center. They also have details about services, classes, and the church nursery."
     -
       title: "Dress"
-      body: "The worshippers at CBC dress in a way that is comfortable for them. Some wear jeans, others have slacks and dress shirts. The women freely wear pants, skirts, or dresses."
+      body: "Our greatest desire is to have you as our guest. Don't worry about what you wear. We won't. We will just be glad you came to join us."
     -
       title: "Music"
       body: "Our music is joyful, worshipful and includes both modern praise music and traditional hymns."
     -
       title: "The Sermon"
-      body: "Our Pastor gives Bible-based messages which are timely, applicable, and Christ-centered. The total service is about one hour and fifteen minutes."
-beliefs:
-  title: What We Believe
-  body: ""
-  cta_link: /beliefs
-  cta_label: Read More
+      body: "Our pastors give exegetical, Bible-based messages which are timely, applicable, and Christ-centered. The total service is about one hour and fifteen minutes."
 reference:
   verse: "\"Jesus said, 'I am the way, and the truth, and the life; no one comes to the Father except through Me.'\""
   label: John 14:6
@@ -40,7 +35,6 @@ reference:
 staff:
   title: Leadership
   body: "This church recognizes Christ as its Head and the Scriptures as its only authority <i>(Colossians 1:18, 2 Timothy 3:16)</i>. Under that authority, the oversight of this church is vested in pastors who operate in concert with the deacons and the congregation."
-  disclaimer: "Our church is an autonomous church which makes its own decisions regarding leadership, membership, doctrine, and practice."
   members:
     -
       first_name: Mike

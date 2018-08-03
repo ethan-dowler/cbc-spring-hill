@@ -1,15 +1,25 @@
-.Calendar{
+.Calendar {
   @include Slice;
   color: $color--white;
-  background-image: linear-gradient(rgba($color--dark-gray, 0.3)), url('/images/marble_counter.jpg');
+  background-image: linear-gradient(rgba($color--dark-gray, 0.3)),
+    url('/images/marble_counter.jpg');
   background-position: center;
   background-size: cover;
 
-  @include breakpoint(palm) {
-    display: none;
-  }
-
   &-title {
     @include Slice-title;
+  }
+
+  &-desk {
+    display: none;
+    @include breakpoint(lap) {
+      display: initial;
+    }
+  }
+
+  &-palm {
+    @include breakpoint(lap) {
+      display: none;
+    }
   }
 }
