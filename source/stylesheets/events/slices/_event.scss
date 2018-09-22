@@ -9,47 +9,23 @@
     @include Slice-title;
   }
 
-  &-body {
-    @include Slice-body;
-    @include scut-margin(n n cubits(2));
-  }
-
-  &-address {
-    @include Slice-body;
-    @include scut-margin(n n cubits(2));
-
-    a:hover {
-      @include underline;
-    }
-  }
-
-  &-inflatables {
+  &-list {
+    @include scut-center-block;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    @include breakpoint(hands) {
-      flex-direction: row;
-      align-items: baseline;
-    }
+    text-align: left;
+    max-width: $width--content;
   }
 
-  &-imageContainer {
-    flex-basis: 24%;
+  &-item {
+    @include scut-margin(n n cubits(2));
 
-    @include breakpoint(hands) {
-      flex-basis: 48%;
+    &Title {
+      @include font(m);
     }
 
-    @include breakpoint(desk) {
-      flex-basis: 24%;
+    &Body {
+      @include font(s);
     }
-  }
-
-  &-image {
-    max-width: 16rem;
-    max-height: 14rem;
   }
 }

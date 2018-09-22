@@ -1,22 +1,19 @@
 hero:
   title: Upcoming Events
 event:
-  title: "Don't Miss our Family Fun Day August 5th at <span class='no-wrap'>10:30 AM!</span>"
-  body: "Join us for the morning service followed by a free cookout and family-friendly outdoor activites such as snow cones, inflatables, and a water slide!"
-  address: "1018 Parkway Drive, <span class='no-wrap'>Spring Hill, TN 37174</span>"
-  link: https://www.google.com/maps/dir//Community+Baptist+Church,+1018+Parkway+Dr,+Spring+Hill,+TN+37174/
-  inflatables:
+  title: Regular Schedule
+  list:
     -
-      img_src: /images/events/sno_kone.jpg
-      img_alt: Sno Kone
+      title: Sunday School
+      body: "Sunday, 9:30 AM"
     -
-      img_src: /images/events/moonwalk.jpg
-      img_alt: Moonwalk
+      title: Mid-Week Bible Study
+      body: "Wednesday, 6:15 - 7:15 PM"
     -
-      img_src: /images/events/tiger_belly_bounce.jpg
-      img_alt: Tigger Belly Bounce
+      title: Youth Group Gathering
+      body: "Wednesday, 6:15 - 7:15 PM"
     -
-      img_src: /images/events/hawaiian.jpg
-      img_alt: Hawaiian
+      title: Kids4Truth & Children's Choir
+      body: "Wednesday, 6:00 - 7:15 PM"
 calendar:
   title: Church Calendar
