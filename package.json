@@ -10,6 +10,6 @@
   },
   "scripts": {
     "prettier": "prettier --write '{source/**/*.js,source/**/*.es6,source/**/*.scss}'",
-    "precommit": "yarn prettier"
+    "prepush": "yarn prettier"
   }
 }
