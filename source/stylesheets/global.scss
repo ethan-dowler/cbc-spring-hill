@@ -5,24 +5,36 @@ a {
   text-decoration: none;
 
   &.inline-link {
-    color: $color--light-gray;
-
-    @include breakpoint(palm) {
-      border-bottom: 1px solid $color--light-gray;
-    }
+    color: $color--primary;
 
     &:visited {
-      color: $color--light-gray;
+      color: $color--primary;
     }
 
     &:hover {
-      color: $color--bright-gray;
+      color: $color--primary-hover;
       text-decoration: underline;
     }
 
     &--mobile-only {
       @include breakpoint(hands) {
         pointer-events: none;
+      }
+    }
+
+    &--light {
+      color: $color--light-gray;
+
+      @include breakpoint(palm) {
+        border-bottom: 1px solid $color--light-gray;
+      }
+
+      &:visited {
+        color: $color--light-gray;
+      }
+
+      &:hover {
+        color: $color--bright-gray;
       }
     }
   }
