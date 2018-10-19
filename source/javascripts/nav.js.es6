@@ -1,5 +1,6 @@
 ;(function() {
-  const open = 'menu-open'
+  const open = 'menu-open',
+    dataToggle = '[data-toggle-menu]'
 
   var openMenu = () => {
     document.body.classList.add(open)
@@ -10,7 +11,11 @@
   }
 
   var toggleMenu = e => {
-    if (!e.target.matches('[data-toggle-menu]')) return
+    if (
+      !e.target.matches(dataToggle) &&
+      !e.target.parentElement.matches(dataToggle)
+    )
+      return
     if (document.body.classList.contains(open)) closeMenu()
     else openMenu()
   }

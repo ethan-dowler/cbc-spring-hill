@@ -1,11 +1,19 @@
-main: Community Baptist Church
-home_link: /
-logo_src: cbc_logo_color.png
-logo_m_src: cbc_logo_m.jpg
-logo_alt: Community Baptist Church
-beliefs_text: Beliefs
-beliefs_link: /beliefs
-events_text: Events
-events_link: /events
-give_text: Give
-give_link: https://www.easytithe.com/dl/?uid=Comm1018487
+links:
+  -
+    text: Home
+    link: /
+  -
+    text: Beliefs
+    link: /beliefs
+  -
+    text: Ministries
+    link: /ministries
+  -
+    text: Children
+    link: /kids
+  -
+    text: Events
+    link: /events
+  -
+    text: Give
+    link: https://www.easytithe.com/dl/?uid=Comm1018487

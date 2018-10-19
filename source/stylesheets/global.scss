@@ -44,6 +44,7 @@ body {
   color: $color--white;
   width: 100%;
   transition: all 0.2s;
+  cursor: pointer;
 
   @include breakpoint(hands) {
     @include scut-padding(n cubits(2));

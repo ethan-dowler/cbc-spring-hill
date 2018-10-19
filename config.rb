@@ -10,9 +10,7 @@ activate :sprockets do |s|
 end
 
 require "evil_icons"
-require "lib/view_helpers/evil_icons"
 helpers EvilIcons::Helpers
-helpers ViewHelpers::EvilIcons
 after_configuration do
   sprockets.append_path(EvilIcons.assets_dir)
 end
