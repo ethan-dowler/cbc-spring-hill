@@ -3,17 +3,17 @@
 .Nav {
   @include scut-padding(cubits(5) cubits(1) n);
   @include scut-fixed(0 0 0 n);
-  @include scut-size(15rem 100vh);
+  @include scut-size($width--nav 100vh);
   z-index: 100;
   background: $color--bright-gray;
   border: 2px solid $color--light-gray;
   border-right-color: transparent;
   border-radius: 0.25rem 0 0 0.25rem;
-  transition: transform 0.5s;
-  transform: translateX(100%);
+  transition: right 0.5s;
+  right: -$width--nav;
 
   .menu-open & {
-    transform: translateX(0);
+    right: 0;
   }
 
   &-container {

@@ -3,25 +3,25 @@
     dataToggle = '[data-toggle-menu]',
     navClass = '.Nav'
 
-  var openMenu = () => {
-    document.body.classList.add(open)
+  var menuIsOpen = () => document.body.classList.contains(open)
+
+  var openMenu = () => document.body.classList.add(open)
+
+  var closeMenu = () => document.body.classList.remove(open)
+
+  var toggleMenu = () => {
+    if (menuIsOpen()) closeMenu()
+    else openMenu()
   }
 
-  var closeMenu = () => {
-    document.body.classList.remove(open)
+  var clickingToggle = target => !!target.closest(dataToggle)
+
+  var clickingOutsideNav = target => !target.closest(navClass)
+
+  var onClick = e => {
+    if (clickingToggle(e.target)) toggleMenu()
+    else if (clickingOutsideNav(e.target)) closeMenu()
   }
 
-  var toggleMenu = e => {
-    // if the menu is open and the user clicks anything other than the Menu
-    if (document.body.classList.contains(open) && !e.target.matches(navClass))
-      closeMenu()
-    // if the user clicks a menu toggle (or the parent of a menu toggle)
-    else if (
-      e.target.matches(dataToggle) ||
-      e.target.parentElement.matches(dataToggle)
-    )
-      openMenu()
-  }
-
-  document.addEventListener('click', toggleMenu)
+  document.addEventListener('click', onClick)
 })()
