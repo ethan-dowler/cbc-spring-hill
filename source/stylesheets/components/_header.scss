@@ -1,18 +1,8 @@
 @import '../shared';
 
-.TopNav {
+.Header {
   display: flex;
   justify-content: space-between;
-
-  &-give {
-    background-color: $color--give;
-    border-color: $color--give;
-
-    &:hover {
-      background-color: $color--give-hover;
-      border-color: $color--give-hover;
-    }
-  }
 
   &-logo {
     display: none;
@@ -33,21 +23,25 @@
     }
   }
 
-  &-other {
+  &-buttonContainer {
+    @include scut-padding(cubits(1) cubits(0.5));
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+
   }
 
-  &-item {
-    @include scut-margin(n cubits(1) n n);
+  &-button {
+    @include scut-margin(n cubits(1));
+  }
 
-    @include breakpoint(hands) {
-      @include scut-margin(n n n cubits(1));
+  &-give {
+    background-color: $color--give;
+    border-color: $color--give;
+
+    &:hover {
+      background-color: $color--give-hover;
+      border-color: $color--give-hover;
     }
   }
-
-  // &-toggle {
-  //   cursor: pointer;
-  // }
 }
