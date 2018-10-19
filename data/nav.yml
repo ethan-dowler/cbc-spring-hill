@@ -5,9 +5,9 @@ links:
   -
     text: Beliefs
     link: /beliefs
-  -
-    text: For Adults
-    link: /ministries
+  # -
+  #   text: For Adults
+  #   link: /ministries
   -
     text: For Kids
     link: /kids
