@@ -1,2 +1,18 @@
 hero:
-  title: Kids
+  title: Children's Ministry
+  # from Matthew 19:14
+  body: "But Jesus said, \"Let the little children come to Me...\""
+kids:
+  title: We will care for your kids as if they were our own.
+  body: We love teaching children about the greatness of God and the love of Jesus.
+  details:
+    - After the musical portion of our Sunday Service (10:30am), the children are dismissed to attend an interactive lesson about the bible in a way they can more easily understand. They also participate in a craft or other hands-on learning.
+    - "If you plan on attending one of our Sunday morning Bible study classes (9:30am), your child may attend one of our children's classes."
+    - For children three years old and and younger, we provide a warm, nurturing nursery for both the Sunday School hour and the corporate service.
+midweek:
+  title: Learn the Bible and learn to sing!
+  body: "Mid-week Bible Study and Children's Choir"
+  details:
+    - "Children meet at 6:00pm on Wednesday evenings to study God's word and sing. That leaves parents with enough time to drop off their children, socialize a little, then make their way our <a class='inline-link' href='/ministries#midweek'>mid-week bible study and prayer time</a> at 6:15pm."
+    - "The children are currently making their way through the <a class='inline-link' href='https://learnabout.kids4truth.com'>Kids4Truth</a> curriculum."
+    - "Teens also meet during this time to exegetically (line by line) study books of the bible."

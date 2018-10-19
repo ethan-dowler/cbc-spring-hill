@@ -1,0 +1,22 @@
+.Midweek {
+  @include Slice;
+
+  &-title {
+    @include Slice-title;
+  }
+
+  &-body {
+    @include Slice-body;
+    @include scut-margin(n n cubits(2));
+  }
+
+  &-details {
+    @include scut-center-block($width--center-column);
+  }
+
+  &-detail {
+    &:not(:last-child) {
+      @include scut-margin(n n cubits(2));
+    }
+  }
+}

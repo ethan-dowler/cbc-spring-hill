@@ -1,0 +1,34 @@
+$height--after: 20rem;
+.Kids {
+  @include Slice;
+  position: relative;
+  @include scut-padding(n n ($height--after + cubits(4)));
+
+  &-title {
+    @include Slice-title;
+  }
+
+  &-body {
+    @include Slice-body;
+    @include scut-margin(n n cubits(2));
+  }
+
+  &-details {
+    @include scut-center-block($width--center-column);
+  }
+
+  &-detail {
+    &:not(:last-child) {
+      @include scut-margin(n n cubits(2));
+    }
+  }
+
+  &::after {
+    content: '';
+    @include scut-absolute(n 0 0 0);
+    @include scut-size(100% $height--after);
+    background-image: url('/images/kids_art.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+}

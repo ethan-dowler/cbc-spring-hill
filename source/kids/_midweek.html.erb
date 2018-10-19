@@ -1,0 +1,18 @@
+<% copy = data.kids.midweek %>
+<div class='Midweek' id='midweek'>
+  <div class='Midweek-title'>
+    <%= copy[:title] %>
+  </div>
+
+  <div class='Midweek-body'>
+    <%= copy[:body] %>
+  </div>
+
+  <div class='Midweek-details'>
+    <% copy[:details].each do |item| %>
+      <div class='Midweek-detail'>
+        <%= item %>
+      </div>
+    <% end %>
+  </div>
+</div>

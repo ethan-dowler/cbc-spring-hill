@@ -1,0 +1,18 @@
+<% copy = data.kids.kids %>
+<div class='Kids'>
+  <div class='Kids-title'>
+    <%= copy[:title] %>
+  </div>
+
+  <div class='Kids-body'>
+    <%= copy[:body] %>
+  </div>
+
+  <div class='Kids-details'>
+    <% copy[:details].each do |item| %>
+      <div class='Kids-detail'>
+        <%= item %>
+      </div>
+    <% end %>
+  </div>
+</div>
