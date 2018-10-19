@@ -1,4 +1,4 @@
-.Hero {
+.home-Hero {
   @include Hero;
   @include scut-padding(6rem n 18rem);
   background-image: linear-gradient($color--dark-gray-tint),

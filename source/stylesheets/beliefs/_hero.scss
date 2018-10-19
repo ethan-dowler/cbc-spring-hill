@@ -1,4 +1,4 @@
-.Hero {
+.beliefs-Hero {
   @include Hero;
   background-image: linear-gradient(rgba($color--dark-gray, 0.5)),
     url('/images/open_bible.jpg');
