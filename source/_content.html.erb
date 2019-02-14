@@ -1,0 +1,26 @@
+<div class='Box Box--content'>
+  <% copy[:items].each do |item| %>
+    <p>
+      <% if item.is_a?(String) %>
+        <%= item %>
+      <% else %>
+        <% if item[:title] %>
+          <span class='bold underline small'><%= item[:title] %></span>
+          <br/>
+        <% end %>
+
+        <%= item[:body] %>
+      <% end %>
+    </p>
+  <% end if copy[:items] %>
+
+  <% if copy[:footnotes] %>
+    <div class='Box-footer'>
+      <% copy[:footnotes].each do |note| %>
+        <p>
+          <i><%= note %></i>
+        </p>
+      <% end %>
+    </div>
+  <% end %>
+</div>

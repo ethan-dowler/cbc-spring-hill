@@ -1,3 +1,9 @@
-@import 'components/nav';
-@import 'components/header';
-@import 'components/footer';
+// shared sub-components
+@import 'components/box';
+@import 'components/button';
+@import 'components/section';
+
+// layout components
+@import 'components/layout/nav';
+@import 'components/layout/header';
+@import 'components/layout/footer';
