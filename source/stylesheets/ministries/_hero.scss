@@ -1,5 +1,4 @@
 .ministries-Hero {
-  @include Hero;
   // background-image: linear-gradient($color--dark-gray-tint),
   //   url('/images/front_row_view_m.jpg');
   // background-position: 20% 0%;
@@ -12,12 +11,4 @@
   //   background-position: center;
   //   background-size: cover;
   // }
-
-  &-title {
-    @include Hero-title;
-  }
-
-  &-body {
-    @include Hero-body;
-  }
 }

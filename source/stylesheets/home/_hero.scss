@@ -1,5 +1,4 @@
 .home-Hero {
-  @include Hero;
   @include scut-padding(6rem n 18rem);
   background-image: linear-gradient($color--dark-gray-tint),
     url('/images/front_row_view_m.jpg');
@@ -12,13 +11,5 @@
       url('/images/front_row_view.jpg');
     background-position: center;
     background-size: cover;
-  }
-
-  &-title {
-    @include Hero-title;
-  }
-
-  &-body {
-    @include Hero-body;
   }
 }

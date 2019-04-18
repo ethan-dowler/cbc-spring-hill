@@ -1,15 +1,6 @@
 .kids-Hero {
-  @include Hero;
   background-image: linear-gradient($color--dark-gray-tint),
     url('/images/shepherd_sheep.jpg');
   background-size: cover;
   background-position: top;
-
-  &-title {
-    @include Hero-title;
-  }
-
-  &-body {
-    @include Hero-body;
-  }
 }
