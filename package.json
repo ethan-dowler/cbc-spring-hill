@@ -13,7 +13,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn prettier && git add . && git commit -m'prettier' || true"
+      "pre-push": "yarn prettier"
     }
   }
 }
