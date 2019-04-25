@@ -37,6 +37,23 @@ a {
         color: $color--bright-gray;
       }
     }
+
+    &--white {
+      color: $color--white;
+
+      @include breakpoint(palm) {
+        border-bottom: 1px solid $color--white;
+      }
+
+      &:visited {
+        color: $color--white;
+      }
+
+      &:hover {
+        color: $color--white;
+        text-decoration: underline;
+      }
+    }
   }
 }
 body {

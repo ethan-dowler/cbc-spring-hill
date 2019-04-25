@@ -1,19 +1,25 @@
-<% copy = data.events.event %>
+<% events ||= data.events.events %>
 <div class='Event'>
-  <div class='Event-title'>
-    <%= copy[:title].html_safe %>
-  </div>
+  <% events.each do |event| %>
+    <div class='Event-title'>
+      <%= event[:title].html_safe %>
+    </div>
 
-  <div class='Event-list'>
-    <% copy[:list].each do |item| %>
-      <div class='Event-item'>
-        <div class='Event-itemTitle'>
-          <%= item[:title] %>
+    <div class='Event-list'>
+      <% event[:list].each do |item| %>
+        <div class='Event-item'>
+          <div class='Event-itemTitle'>
+            <% if item[:title_link].present? %>
+              <%= link_to item[:title], item[:title_link], class: 'inline-link' %>
+            <% else %>
+              <%= item[:title].html_safe %>
+            <% end %>
+          </div>
+          <div class='Event-itemBody'>
+            <%= item[:body] %>
+          </div>
         </div>
-        <div class='Event-itemBody'>
-          <%= item[:body] %>
-        </div>
-      </div>
-    <% end %>
-  </div>
+      <% end %>
+    </div>
+  <% end %>
 </div>

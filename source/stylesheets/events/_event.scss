@@ -11,10 +11,15 @@
 
   &-list {
     @include scut-center-block;
+    @include scut-margin(n n cubits(4));
     display: flex;
     flex-direction: column;
     text-align: left;
     max-width: $width--content;
+
+    &:last-child {
+      @include scut-margin(n n 0);
+    }
   }
 
   &-item {

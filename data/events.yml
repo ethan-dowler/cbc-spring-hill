@@ -1,19 +1,25 @@
 hero:
   title: Upcoming Events
-event:
-  title: Regular Schedule
-  list:
-    -
-      title: Sunday School
-      body: "Sunday, 9:30 AM"
-    -
-      title: Mid-Week Bible Study
-      body: "Wednesday, 6:15 - 7:15 PM"
-    -
-      title: Youth Group Gathering
-      body: "Wednesday, 6:15 - 7:15 PM"
-    -
-      title: Kids4Truth & Children's Choir
-      body: "Wednesday, 6:00 - 7:15 PM"
+events:
+  - title: Special Events
+    list:
+      -
+        title: Lego My Eggo
+        title_link: /lego
+        body: June 22nd 9 AM - Breakfast, Legos, and Fellowship
+  - title: Regular Schedule
+    list:
+      -
+        title: Sunday School
+        body: "Sunday, 9:30 AM"
+      -
+        title: Mid-Week Bible Study
+        body: "Wednesday, 6:15 - 7:15 PM"
+      -
+        title: Youth Group Gathering
+        body: "Wednesday, 6:15 - 7:15 PM"
+      -
+        title: Kids4Truth & Children's Choir
+        body: "Wednesday, 6:00 - 7:15 PM"
 calendar:
   title: Church Calendar
